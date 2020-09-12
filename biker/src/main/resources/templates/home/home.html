@@ -1,4 +1,3 @@
-<link href="<c:url value="/resources/myCss.css" />" rel="stylesheet">
 <html>
 <title>Yamahawks</title>
 <meta charset="UTF-8">
@@ -283,7 +282,7 @@ The YamaHawks is all about our love of biking whether it’s vintage</p>
       <p><i class="fa fa-youtube w3-text-teal w3-xlarge"></i><a href="https://www.youtube.com/channel/UCO3zWHvx2w5VzlegHIgln-A/featured" target="_blank">@TheYamaHawks</a></p>
     </div>
     <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" modelAttribute="contact" action="${pageContext.request.contextPath}/contact/send">
       <div class="w3-section">      
         <label>Name</label>
         <input class="w3-input" type="text" name="Name" required>
@@ -291,6 +290,10 @@ The YamaHawks is all about our love of biking whether it’s vintage</p>
       <div class="w3-section">      
         <label>Email</label>
         <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Subject</label>
+        <input class="w3-input" type="text" name="Subject" required>
       </div>
       <div class="w3-section">      
         <label>Message</label>
