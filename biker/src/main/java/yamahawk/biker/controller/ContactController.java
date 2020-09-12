@@ -36,7 +36,7 @@ public class ContactController {
 			modelMap.put("msg", e.getMessage());
 		}
 		
-		return "contact/index";
+		return "contact/home";
 	}
 
 }
